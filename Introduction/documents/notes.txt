@@ -1,0 +1,136 @@
+======================= Master Class IA ========================================
+
+======================= IA =====================================================
+
+======================= Rappels MAths ==========================================
+
+======================= Python =================================================
+
+======================= Deep Learning ==========================================
+
+Deep Learning = Learning Representations / Features
+extracteur de caracterisitques fait main vs entrainable
+
+Linear Regression with Mean Square:
+  prediction:     y                  = Wt X
+  loss:           L(W.yi.Xi)         = .5 (yi - Wt Xi)^2
+  gradient:       dL/dW              = -(yi - Wt(t) Xi) Xi
+  update:         W(t + 1)           = W(t) + n(t) (-gradient)
+  solution eq:    |sum(i=1)(P) Xi Xit| W   = sum(i=1)(P) yi Xi
+
+  methode de gradient stochastique: objectif minimiser la moyenne du coup
+  recherches depuis les années 70
+  revenu au goût du jour dans l'optimisation
+  imbatable mais 3 lignes de code
+
+Perceptron binary decision:
+  prediction:     y                  = F(Wt X)              F threshold function
+  loss:           L(W.yi.Xi)         = (F(Wt Xi) - yi) Wt Xi
+  gradient:       dL/dW              = -(yi - F(Wt(t) Xi)) Xi
+  update:         W(t + 1)           = W(t) + n(t) (-gradient)
+  solution eq:    find W such that -yi F(Wt Xi) < 0 for every i
+
+  Linear Regression = Perceptron with F = Id
+
+Logistic Regression and Negative Log Likelihood Loss:
+  prediction:     y                  = F(Wt X)              F = simoid = tanh
+  loss:           L(W.yi.Xi)         = 2 log(1 + exp(-yi Wt Xi))
+  gradient:       dL/dW              = -(yi - F(Wt(t) Xi)) Xi
+  update:         W(t + 1)           = W(t) + n(t) (-gradient)
+  solution eq:    find W such that -yi F(Wt Xi) < 0 for every i
+
+Linear Machine Limitations:
+  Decision Surface = Hyperplan (sous espace dim n -1)
+  W augmentée d'une dimension: le biais pour eviter la droite à l'origine
+  Impossible des séparer certains ensembles par un hyperplan
+
+  Th de tom cover: Si on a plus de N pts dans un espace à N dim la pb de
+  séparation devient de plus en plus faible
+
+Solution: Comment rendre un pb linéairement séparable?
+  Ruse: Augmenter la dimension par un transformation non linéaire
+  ex: prendre le produit des entrées  1 x1 x2 => 1 x1 x2 x1^2 x2^2 x1x2
+      => section de séparation conique
+      pb: ne fonctionne pas à grande dimension et la dimension explose rapidement
+
+  autres Ruses: tj pb de dimensionnalité en terme de coup
+
+  autre: SVM methode à base de kernel F(W, W) = sum(k = 1)(P) Wk K(X, Xk)
+         grande valeur quand proche petite quand loin
+         pb: 1 fonction K spécifique au pb
+             Pas généralisable
+
+  Idée à retenir: Machine à base de Kernel superparamétrisée
+                  Rendre le model assez flexible pour apprendre
+                  Penaliser de maniere à generaliser
+                  Th de Vapnick
+
+Réseau de Neurones: Décisions élementaires + combinaisons lineaires
+                    diff: les K sont appris par le model
+
+Anciennes méthodes: -> pretraitement fixe
+                    -> non supervisé pour aug la dimension non lineairement et sparse
+                    -> supervisé
+
+Nouvelles: Même mais tout est appris
+           Plus on est profond plus on a des features de haut niveau
+           Fonctionne bien car la nature est compositionnelle:
+            "Assemblage de motifs assemblés eux même de motifs"
+           Einstein "incomprehensible le monde est comprehensible" <- à chercher
+
+           Challenges: Apprendre des représentations du monde à plusieurs niveaux
+                       Idée loufoque
+                       Traitement visuel et audio qui est hiérarchique lui aussi
+                       Soutient cette idée
+                       Visuel: traitement FeedForward
+
+Differents models profonds:
+  - Feed Forward: MLP, CNN, RNN
+  - Feed Back: Deconv, Generatif
+  - Bi Directionam: Deep Boltzman Machines, Stacked Auto Encoder
+
+Méthodes d'entraînement:
+  - Supervisé
+  - Non supervisé
+
+On peut approximé nimporte quel fonction avec deux couches
+pk faire plus ?
+Oui mais pas efficace, trop coûteux
+Top de variablité pour continuer avec les methodes à kernel
+Example: Xor en electronique il faut un nombre exp d'unité en deux couches
+         linéaire log2(n) si plus de couches
+Baisser la complexité en augmentant le nombre de couches
+
+Difficile de prouver la convergence car des losses non convexes
+D'où la rétissance des théoriciens
+Histoire du réverbère et du porte monnaie
+L'apprentissage interessant n'est pas convexe:
+  sinon pas d'autre d'aprentissage pour un humain
+  commencer simple pour apprendre compliqué
+
+But: Identifier les variables independantes explicatives du monde
+     On a des ex et on veut expliquer ces varibales
+
+Photo: millions de dimensions
+       visage en reprensente une 50aine
+       but:
+        sur la surface? -> qui?
+        où sur le surface? -> position? émotion?
+        quels sont les pts de paramètres? -> générer une image du visage
+
+Comment on entraîne ? Algo de rétropropagation
+  - Descente de gradient
+  - Cout/Error entre sortie et target
+  - comment calculer le gradient? -> Chain Rule
+  - Exemple à faire à la main
+  - gradient à moyenner sur tous les exemples
+Même example en keras ou pytorch
+
+Un framewok de Deep learning est juste un ensemble de module
+Deep Learning = science des topologies de modules d'apprentissage
+
+Exemple de modules connus
+Le reste des cours seront:
+  - L'étude d'un module
+  - L'étude d'une topologie
+  à des fins particulières
