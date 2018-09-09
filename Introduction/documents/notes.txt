@@ -14,7 +14,9 @@ Pourquoi?
   Invention majeur depuis la dernière techno
   Investissements
   Place de l'IA dans la société
-  ...
+  Pour faire avancer cette techno plus rapidement
+  Besoin de plus de personnes travaillant le sujet
+  Plus de partage (Open Source pour la plupart)
 
 Cours (Montrer des Exemples):
   - Deep Learning Introduction
@@ -33,9 +35,30 @@ Cours (Montrer des Exemples):
 
 ======================= IA =====================================================
 
-======================= Rappels MAths ==========================================
+L'intelligence artificiemme est la science dont le but est de faire faire par
+une machine des tâches que l'homme accomplit en utilisant son intelligence.
+
+Mieux vaut parler de: Informatique Heuristique
+
+Autre définition (J.L.Laurière): Etude des activités intellectuelles de l'homme
+pour lesquelles aucune méthode n'est a priori connue.
+(Tout ce qui n'a pas encore été fait en Informatique - quand on sait le faire,
+ce n'est plus de l'IA ... )
+
+IA Faible vs IA Forte:
+  - Faible: non-sensible qui se concentre sur une tâche précise et prédéfinie
+  - Forte: capable de répondre à toute problème
+           non seulement de produire un comportement intelligent,
+           mais d’éprouver une impression d'une réelle conscience de soi
+
+======================= Rappels Maths ==========================================
+
+Algèbre linéaire: Vecteurs, Matrices, Tenseurs
+Analyse Fonctionnelle: Fonctions, Fonctions multivariables, Dérivée, Gradient
 
 ======================= Python =================================================
+
+Bases du language / Cheat Sheet
 
 ======================= Deep Learning ==========================================
 
@@ -108,6 +131,8 @@ Nouvelles: Même mais tout est appris
            Fonctionne bien car la nature est compositionnelle:
             "Assemblage de motifs assemblés eux même de motifs"
            Einstein "incomprehensible le monde est comprehensible" <- à chercher
+           Si les features sont de meilleur qualité: meilleur algo
+           exemple: equation en chiffre arabe vs equation en chiffre romain
 
            Challenges: Apprendre des représentations du monde à plusieurs niveaux
                        Idée loufoque
