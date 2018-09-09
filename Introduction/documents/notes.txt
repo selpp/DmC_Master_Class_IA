@@ -1,4 +1,35 @@
+DUREE MAX: 2h30 (laisser la place aux questions)
+OBJECTIFS: Dynamique + Technique + Essayer de ne pas perdre d'élèves
+
 ======================= Master Class IA ========================================
+
+Pour qui?
+  Tout le monde
+  requis (avoir quelques connaissances de base pas le temps de revenir sur tout):
+    - Bases d'algèbre linéaire
+    - Bases d'anlyse de fonctions
+    - Connaissances de base en algorithmie
+
+Pourquoi?
+  Invention majeur depuis la dernière techno
+  Investissements
+  Place de l'IA dans la société
+  ...
+
+Cours (Montrer des Exemples):
+  - Deep Learning Introduction
+
+  - CNN
+  - YOLO + STYLE TRANSFERT
+
+  - RNN
+  - EMBEDDING + TADUCTION
+
+  - REINFORCEMENT
+  - DQN + RAIMBOW
+
+  - GAN
+  - POKEMON
 
 ======================= IA =====================================================
 
@@ -134,3 +165,4 @@ Le reste des cours seront:
   - L'étude d'un module
   - L'étude d'une topologie
   à des fins particulières
+N'importe quelle topologie si sans boucle
