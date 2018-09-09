@@ -29,7 +29,7 @@ Cours (Montrer des Exemples):
   - DQN + RAIMBOW
 
   - GAN
-  - POKEMON
+  - POKEMON + SUPERRESOLUTION
 
 ======================= IA =====================================================
 
