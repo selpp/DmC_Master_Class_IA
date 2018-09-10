@@ -25,17 +25,17 @@ Cours (Montrer des Exemples):
   - YOLO + STYLE TRANSFERT
 
   - RNN
-  - EMBEDDING + TADUCTION
+  - EMBEDDING + TRADUCTION
 
   - REINFORCEMENT
-  - DQN + RAIMBOW
+  - DQN + RAIMBOW + INTRO SUR METHODES DISTRIBUEES
 
   - GAN
   - POKEMON + SUPERRESOLUTION
 
 ======================= IA =====================================================
 
-L'intelligence artificiemme est la science dont le but est de faire faire par
+L'intelligence artificielle est la science dont le but est de faire faire par
 une machine des tâches que l'homme accomplit en utilisant son intelligence.
 
 Mieux vaut parler de: Informatique Heuristique
@@ -47,7 +47,7 @@ ce n'est plus de l'IA ... )
 
 IA Faible vs IA Forte:
   - Faible: non-sensible qui se concentre sur une tâche précise et prédéfinie
-  - Forte: capable de répondre à toute problème
+  - Forte: capable de répondre à tout problème
            non seulement de produire un comportement intelligent,
            mais d’éprouver une impression d'une réelle conscience de soi
 
@@ -143,7 +143,7 @@ Nouvelles: Même mais tout est appris
 Differents models profonds:
   - Feed Forward: MLP, CNN, RNN
   - Feed Back: Deconv, Generatif
-  - Bi Directionam: Deep Boltzman Machines, Stacked Auto Encoder
+  - Bi Directionel: Deep Boltzman Machines, Stacked Auto Encoder
 
 Méthodes d'entraînement:
   - Supervisé
