@@ -1,3 +1,5 @@
+open introduction.dmc
+
 // ===================== MASTER CLASS IA =======================================
 
 # Master Class IA
@@ -14,8 +16,9 @@
 
   ## Pourquoi ?
 
-  show info Invention majeur en informatique
-  show info Secteur à fort potentiel d'investissement
+  show info
+    Invention majeure en informatique
+    Secteur à fort potentiel d'investissement
   show info
     L'IA est présente partout et sa place dans la société ne va cesser d'augmenter
   show info
@@ -25,20 +28,24 @@
   ## Quoi ?
 
   show info Introduction au Deep Learning
-  show info Réseaux de Neurones Convolutifs
-  show info Yolo & Transfert de Style
-  show info Réseaux de Neurones Récurrents
-  show info Embedding & Traduction
-  show info Apprentissage par Réenforcement
-  show info Deep Q Network & Améliorations
-  show info Modèles génératifs
-  show info Pokemon & Super Résolution
+  show info
+    Réseaux de Neurones Convolutifs
+    Yolo & Transfert de Style
+  show info
+    Réseaux de Neurones Récurrents
+    Embedding & Traduction
+  show info
+    Apprentissage par Réenforcement
+    Deep Q Network & Améliorations
+  show info
+    Modèles génératifs
+    Pokemon & Super Résolution
 
 // ===================== IA ====================================================
 
 # L'Intelligence Artificielle
 
-  ## Définition
+  ## Définitions
 
   show info Il n'y a pas qu'une seule définition
   show info
@@ -72,14 +79,130 @@
 
 // ===================== PYTHON CHEAT SHEET ====================================
 
+open cheat_sheet.py
+
 # Python Cheat Sheet
+
+  ## Types
+  move to line 1
+  show line 1 to 17
+  move to line 2
+  show line 2 to 5
+  move to line 6
+  show line 6 to 8
+  move to line 9
+  show line 9 to 10
+  move to line 11
+  show line 11 to 16
+  move to line 17
+  show line 17
+  show line -1
+
+  ## Containers
+  move to line 19
+  show line 19 to 23
+  move to line 20
+  show line 20
+  move to line 21
+  show line 21
+  move to line 22
+  show line 22
+  move to line 23
+  show line 23
+  show line -1
+
+  ## Variables
+  move to line 25
+  show line 25 to 35
+  move to line 26
+  show line 26 to 27
+  move to line 28
+  show line 28
+  move to line 29
+  show line 29
+  move to line 30
+  show line 30 to 33
+  move to line 34
+  show line 34
+  move to line 35
+  show line 35
+  show line -1
+
+  ## Convertions
+  move to line 37
+  show line 37 to 45
+  show line -1
+
+  ## Listes
+  move to line 47
+  show line 47 to 63
+  move to line 48
+  show line 48 to 49
+  move to line 50
+  show line 50 to 57
+  move to line 58
+  show line 58 to 63
+  show line -1
+
+  ## Conditions
+  move to line 65
+  show line 65 to 73
+  show line -1
+
+  ## Boucles
+  move to line 75
+  show line 75 to 81
+  move to line 76
+  show line 76 to 78
+  move to line 80
+  show line 80 to 81
+  show line -1
+
+  ## Fonctions
+  move to line 83
+  show line 83 to 88
+  move to line 84
+  show line 84 to 86
+  move to line 88
+  show line 88
+  show line -1
+
+  ## Classes
+  move to line 90
+  show line 90 to 112
+  move to line 91
+  show line 91 to 104
+  move to line 106
+  show line 106 to 107
+  move to line 109
+  show line 109 to 110
+  move to line 112
+  show line 112
+  show line -1
+
+  ## Imports
+  move to line 114
+  show line 114 to 117
+  show line -1
+
+  ## Ecriture et Lecture de Fichier
+  move to line 119
+  show line 119 to 127
+  move to line 120
+  show line 120 to 123
+  move to line 125
+  show line 125 to 127
+
+
+open introduction.dmc
 
 // ===================== DEEP LEARNING =========================================
 
 # Introduction au Deep Learning
 
-show info Le Deep Learning est l'apprentissage de Représentations
-show info Extracteur de caractéristique entraînable
+show info
+  Le Deep Learning est l'apprentissage de Représentations
+  Extracteur de caractéristique entraînable
 
 
     ## Machine Learning
@@ -89,10 +212,12 @@ show info Extracteur de caractéristique entraînable
       show maths L(W, y_{i}, X_{i}) = \frac{1}{2} (y_{i}-W^{t}X_{i})^{2}
       show maths \frac{\partial L}{\partial W} = -(yi - W^{t}(t) X_{i}) X_{i}
       show maths W(t+1) = W(t) + \eta (t) (-\frac{\partial L}{\partial W})
-      show info Minimiser la moyenne du coup
-      show info Méthode du gradient stochastique
-      show info Recherches dans les années 70 mais revenu au goût du jour
-      show info Méthode imbattable en optimisation et seulement 3 lignes de code
+      show info
+        Minimiser la moyenne du coup
+        Méthode du gradient stochastique
+      show info
+        Recherches dans les années 70 mais revenu au goût du jour
+        Méthode imbattable en optimisation et seulement 3 lignes de code
 
       ### Perceptron
       show maths y = F(W^{t}X) \:\:\:\:\:\:\:\:\:\:\:\:\ F\,fonction\,seuil
@@ -108,9 +233,10 @@ show info Extracteur de caractéristique entraînable
       show maths W(t+1) = W(t) + \eta (t) (-\frac{\partial L}{\partial W})
 
     ## Limitations des Machines Linéaires
-    show info La décision de surface est un Hyperplan de dimension N-1
-    show info W est augmenté d'une dimension pour éviter de passer par l'origine
-    show info Impossible de séparer certains ensembles par un hyperplan
+    show info
+      La décision de surface est un Hyperplan de dimension N-1
+      W est augmenté d'une dimension pour éviter de passer par l'origine
+      Impossible de séparer certains ensembles par un hyperplan
     show quote from Thomas M. Cover
       A partir du moment où il y a plus de N points dans un espace à N dimensions,
       le probabilité de séparation devient de plus en plus faible
@@ -124,61 +250,66 @@ show info Extracteur de caractéristique entraînable
       show info Augmenter la dimension par une transformation non linéaire
       show info Exemple: Prendre le produit des entrées
       show maths
-        (1, x_{1}, x_{2}): \, (1, x_{1}, x_{2}, x_{1}^{2}, x-{2}^{2}, x_{1}x_{2})
-      show La ligne de séparation devient conique
-      show info Ne fonctionne pas à grande dimension, elle explose rapidement
+        (1, x_{1}, x_{2}): \, (1, x_{1}, x_{2}, x_{1}^{2}, x_{2}^{2}, x_{1}x_{2})
+      show info
+        La ligne de séparation devient conique
+        Ne fonctionne pas à grande dimension, elle explose rapidement
 
       ### Autres Ruses
       show info Trop coûteux en terme de dimensionnalité
 
       ### Machines à Noyaux
-      show Machine à Vecteur de Support
-      show maths F(X, W) \sum_{k=1}^{P} W_{k} K(X, X_{k})
-      show info La valeur est grande quand elle est proche et petite sinon
-      show info Souvent un K est spécifique à un problème
-      show info La méthode n'est donc pas généralisable
+      show info Machine à Vecteur de Support
+      show maths F(X, W) = \sum_{k=1}^{P} W_{k} K(X, X_{k})
+      show info
+        La valeur est grande quand elle est proche et petite sinon
+        Souvent un K est spécifique à un problème
+        La méthode n'est donc pas généralisable
 
       ### Idées à retenir
-      show info Les SVM sont performantes car le Noyau est surparamétrisé
-      show info Cela rend le modèle assez flexible pour permettre l'apprentissage
-      show info Il faudrait pénaliser le modèle pour pouvoir généraliser
-      show quote Vapnick - Chervonenkis
+      show info
+        Les SVM sont performantes car le Noyau est surparamétrisé
+        Cela rend le modèle assez flexible pour permettre l'apprentissage
+        Il faudrait pénaliser le modèle pour pouvoir généraliser
+      show quote from Vapnick - Chervonenkis
         La dimension de Vapnick d'un modèle de classification est le cardinal
         du plus grand ensemble pulvérisable par le modèle sans aucune erreur
-      show info Ce théorème ainsi que ses recherches on permit de dévelopepr une intuition
       show maths
         Erreur + \sqrt{ \frac{ h(log(2N/h)+1) - log(\eta /4) }{ N } }
-      show Des features de meilleurs qualité entraînent de meilleurs résultats
+      show info Des features de meilleurs qualité entraînent de meilleurs résultats
 
 
     ## Réseaux de Neurones Profonds
-    show info Combinaison de décisions élémentaires
-    show info Les K sont appris par le modèle
+    show info
+      Combinaison de décisions élémentaires
+      Les K sont appris par le modèle
 
       ### Aciennes Méthodes
-      show info Prétraitement fixe
       show info
-        Entraînement non supervisé pour augmenter la dimension de manière
-        non linéaire et clairsemée
-      show info Classifieur supervisé
+        Prétraitement fixe
+        Entraînement non supervisé pour augmenter la dimension de manière non linéaire et clairsemée
+        Classifieur supervisé
 
       ### Nouvelles Méthodes
       show info Exactement la même sauf que chaque étape du processus est apprise
-      show info Plus le modèle est profond plus les features sont de haut niveau
-      show info Fonctionne car la nature est elle même compositionnelle
-      show info C'est un Ensemble de concept divisés eux même en concepts plus simples
-      show quote Albert Einstein
+      show info
+        Plus le modèle est profond plus les features sont de haut niveau
+        Fonctionne car la nature est elle même compositionnelle
+        C'est un Ensemble de concept divisés eux même en concepts plus simples
+      show quote from Albert Einstein
         Ce qui est incompréhensible, c’est que le monde soit compréhensible.
 
       ### Challenges
       show info Apprendre des représentations du monde à plusieurs niveaux
-      show info Exemple: Traitement visuel et audio chez les mamifères
-      show info Ces traitements sont Feed-Forward
+      show info
+        Exemple: Traitement visuel et audio chez les mamifères
+        Ces traitements sont Feed-Forward
 
       ### Différents Types
-      show info Feed-Forward: MLP, CNN, RNN
-      show info Feed-Backward: DéConv, Génératife
-      show info Bi-Directionnel: Deep Boltzman Machines, Stacked Auto Encoder
+      show info
+        Feed-Forward: MLP, CNN, RNN
+        Feed-Backward: DéConv, Génératife
+        Bi-Directionnel: Deep Boltzman Machines, Stacked Auto Encoder
 
       ### Différents Entraînement
         #### Supervisé
