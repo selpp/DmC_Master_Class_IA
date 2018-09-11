@@ -1,0 +1,185 @@
+// ===================== MASTER CLASS IA =======================================
+
+# Master Class IA
+
+  ## Pour qui ?
+
+  show info Toute personne intéressée par le sujet
+  show info
+    Pas de prérequis préalable mais mieux si:
+      - Bases d'Algèbre Linéaire
+      - Bases d'Analyse de Fonctions
+      - Bases d'Algorithmie
+
+
+  ## Pourquoi ?
+
+  show info Invention majeur en informatique
+  show info Secteur à fort potentiel d'investissement
+  show info
+    L'IA est présente partout et sa place dans la société ne va cesser d'augmenter
+  show info
+    Pour faire avancer le domaine plus rapidement, il y a un besoin de partage
+
+
+  ## Quoi ?
+
+  show info Introduction au Deep Learning
+  show info Réseaux de Neurones Convolutifs
+  show info Yolo & Transfert de Style
+  show info Réseaux de Neurones Récurrents
+  show info Embedding & Traduction
+  show info Apprentissage par Réenforcement
+  show info Deep Q Network & Améliorations
+  show info Modèles génératifs
+  show info Pokemon & Super Résolution
+
+// ===================== IA ====================================================
+
+# L'Intelligence Artificielle
+
+  ## Définition
+
+  show info Il n'y a pas qu'une seule définition
+  show info
+    L'Intelligence Artificielle est la science dont le but est de faire faire par
+    une machine des tâches que l'homme accomplit en utilisant son intelligence
+  show info On parle plutôt d'Informatique Heuristique
+  show quote from J.L.Laurière
+    Etude des activités intellectuelles de l'homme pour lesquelles
+    aucune méthode n'est à priori connue
+
+
+  ## IA Faible vs IA Forte
+
+    ### Faible
+    show info Non-sensible, qui se concentre sur une tâche précise et prédéfinie
+
+    ### Forte
+    show info
+      Capable de répondre à tout problème, non seulement de produire un comportement
+      intelligent mais aussi d'éprouver une impression d'une réelle conscience
+      de soi
+
+// ===================== MATHS FOR DEEP LEARNING ===============================
+
+# Mathématiques pour le Deep Learning
+
+  ## Algèbre Linéaire
+
+
+  ## Analyse de Fonctions
+
+// ===================== PYTHON CHEAT SHEET ====================================
+
+# Python Cheat Sheet
+
+// ===================== DEEP LEARNING =========================================
+
+# Introduction au Deep Learning
+
+show info Le Deep Learning est l'apprentissage de Représentations
+show info Extracteur de caractéristique entraînable
+
+
+    ## Machine Learning
+
+      ### Régression Linéaire
+      show maths y = W^{t}X
+      show maths L(W, y_{i}, X_{i}) = \frac{1}{2} (y_{i}-W^{t}X_{i})^{2}
+      show maths \frac{\partial L}{\partial W} = -(yi - W^{t}(t) X_{i}) X_{i}
+      show maths W(t+1) = W(t) + \eta (t) (-\frac{\partial L}{\partial W})
+      show info Minimiser la moyenne du coup
+      show info Méthode du gradient stochastique
+      show info Recherches dans les années 70 mais revenu au goût du jour
+      show info Méthode imbattable en optimisation et seulement 3 lignes de code
+
+      ### Perceptron
+      show maths y = F(W^{t}X) \:\:\:\:\:\:\:\:\:\:\:\:\ F\,fonction\,seuil
+      show maths L(W, y_{i}, X_{i}) = (F(W^{t}X_{i}) - y_{i}) W^{t} X_{i}
+      show maths \frac{\partial L}{\partial W} = -(yi - F(W^{t}(t) X_{i})) X_{i}
+      show maths W(t+1) = W(t) + \eta (t) (-\frac{\partial L}{\partial W})
+      show info Régression Linéaire est un perceptron avec F = Id
+
+      ### Régression Logistique
+      show maths y = F(W^{t}X) \:\:\:\:\:\:\:\:\:\:\:\:\ F\,sigmoid
+      show maths L(W, y_{i}, X_{i}) = 2log(1 + exp(y_{i}W^{t}X_{i}))
+      show maths \frac{\partial L}{\partial W} = -(yi - F(W^{t}(t) X_{i})) X_{i}
+      show maths W(t+1) = W(t) + \eta (t) (-\frac{\partial L}{\partial W})
+
+    ## Limitations des Machines Linéaires
+    show info La décision de surface est un Hyperplan de dimension N-1
+    show info W est augmenté d'une dimension pour éviter de passer par l'origine
+    show info Impossible de séparer certains ensembles par un hyperplan
+    show quote from Thomas M. Cover
+      A partir du moment où il y a plus de N points dans un espace à N dimensions,
+      le probabilité de séparation devient de plus en plus faible
+
+
+    ## Solutions
+
+      show info Comment rendre un problème linéairement séparable ?
+
+      ### Ruse
+      show info Augmenter la dimension par une transformation non linéaire
+      show info Exemple: Prendre le produit des entrées
+      show maths
+        (1, x_{1}, x_{2}): \, (1, x_{1}, x_{2}, x_{1}^{2}, x-{2}^{2}, x_{1}x_{2})
+      show La ligne de séparation devient conique
+      show info Ne fonctionne pas à grande dimension, elle explose rapidement
+
+      ### Autres Ruses
+      show info Trop coûteux en terme de dimensionnalité
+
+      ### Machines à Noyaux
+      show Machine à Vecteur de Support
+      show maths F(X, W) \sum_{k=1}^{P} W_{k} K(X, X_{k})
+      show info La valeur est grande quand elle est proche et petite sinon
+      show info Souvent un K est spécifique à un problème
+      show info La méthode n'est donc pas généralisable
+
+      ### Idées à retenir
+      show info Les SVM sont performantes car le Noyau est surparamétrisé
+      show info Cela rend le modèle assez flexible pour permettre l'apprentissage
+      show info Il faudrait pénaliser le modèle pour pouvoir généraliser
+      show quote Vapnick - Chervonenkis
+        La dimension de Vapnick d'un modèle de classification est le cardinal
+        du plus grand ensemble pulvérisable par le modèle sans aucune erreur
+      show info Ce théorème ainsi que ses recherches on permit de dévelopepr une intuition
+      show maths
+        Erreur + \sqrt{ \frac{ h(log(2N/h)+1) - log(\eta /4) }{ N } }
+      show Des features de meilleurs qualité entraînent de meilleurs résultats
+
+
+    ## Réseaux de Neurones Profonds
+    show info Combinaison de décisions élémentaires
+    show info Les K sont appris par le modèle
+
+      ### Aciennes Méthodes
+      show info Prétraitement fixe
+      show info
+        Entraînement non supervisé pour augmenter la dimension de manière
+        non linéaire et clairsemée
+      show info Classifieur supervisé
+
+      ### Nouvelles Méthodes
+      show info Exactement la même sauf que chaque étape du processus est apprise
+      show info Plus le modèle est profond plus les features sont de haut niveau
+      show info Fonctionne car la nature est elle même compositionnelle
+      show info C'est un Ensemble de concept divisés eux même en concepts plus simples
+      show quote Albert Einstein
+        Ce qui est incompréhensible, c’est que le monde soit compréhensible.
+
+      ### Challenges
+      show info Apprendre des représentations du monde à plusieurs niveaux
+      show info Exemple: Traitement visuel et audio chez les mamifères
+      show info Ces traitements sont Feed-Forward
+
+      ### Différents Types
+      show info Feed-Forward: MLP, CNN, RNN
+      show info Feed-Backward: DéConv, Génératife
+      show info Bi-Directionnel: Deep Boltzman Machines, Stacked Auto Encoder
+
+      ### Différents Entraînement
+        #### Supervisé
+        #### Non Supervisé

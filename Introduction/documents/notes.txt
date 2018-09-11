@@ -67,7 +67,7 @@ extracteur de caracterisitques fait main vs entrainable
 
 Linear Regression with Mean Square:
   prediction:     y                  = Wt X
-  loss:           L(W.yi.Xi)         = .5 (yi - Wt Xi)^2
+  loss:           L(W, yi, Xi)         = .5 (yi - Wt Xi)^2
   gradient:       dL/dW              = -(yi - Wt(t) Xi) Xi
   update:         W(t + 1)           = W(t) + n(t) (-gradient)
   solution eq:    |sum(i=1)(P) Xi Xit| W   = sum(i=1)(P) yi Xi
@@ -79,7 +79,7 @@ Linear Regression with Mean Square:
 
 Perceptron binary decision:
   prediction:     y                  = F(Wt X)              F threshold function
-  loss:           L(W.yi.Xi)         = (F(Wt Xi) - yi) Wt Xi
+  loss:           L(W, yi, Xi)         = (F(Wt Xi) - yi) Wt Xi
   gradient:       dL/dW              = -(yi - F(Wt(t) Xi)) Xi
   update:         W(t + 1)           = W(t) + n(t) (-gradient)
   solution eq:    find W such that -yi F(Wt Xi) < 0 for every i
@@ -88,7 +88,7 @@ Perceptron binary decision:
 
 Logistic Regression and Negative Log Likelihood Loss:
   prediction:     y                  = F(Wt X)              F = simoid = tanh
-  loss:           L(W.yi.Xi)         = 2 log(1 + exp(-yi Wt Xi))
+  loss:           L(W, yi, Xi)         = 2 log(1 + exp(-yi Wt Xi))
   gradient:       dL/dW              = -(yi - F(Wt(t) Xi)) Xi
   update:         W(t + 1)           = W(t) + n(t) (-gradient)
   solution eq:    find W such that -yi F(Wt Xi) < 0 for every i
