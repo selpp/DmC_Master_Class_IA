@@ -279,7 +279,7 @@ show info
       show info Des features de meilleurs qualité entraînent de meilleurs résultats
 
 
-    ## Réseaux de Neurones Profonds
+    ## Deep Learning
     show info
       Combinaison de décisions élémentaires
       Les K sont appris par le modèle
@@ -304,6 +304,8 @@ show info
       show info
         Exemple: Traitement visuel et audio chez les mamifères
         Ces traitements sont Feed-Forward
+      show info Identifier les variables indépendantes explicatives du monde
+      show info Exemple: Le Visage
 
       ### Différents Types
       show info
@@ -314,3 +316,30 @@ show info
       ### Différents Entraînement
         #### Supervisé
         #### Non Supervisé
+
+      ### Réticences
+      show info On peut approximer n'importe quelle fonction avec deux couches
+      show info
+        Oui mais pas efficace et trop coûteux
+        Augmenter le nombre de couche diminue la complexité du problème
+      show info
+        Il est difficile de prouver la convergence des modèles de Deep Learning
+        car les losses ne sont pas des fonctions convexes.
+      show quote from Unknown
+        - Que faites-vous, Monsieur?
+        - Ben...  je cherche ma clef.
+        - Mais êtes-vous sûr que vous l'avez perdue ici?
+        - Non, absolument pas. Mais c'est le seul endroit où il y a de la lumière!
+      show info
+        L'apprentissage intéressant n'est pas convexe
+        L'Humain n'apprend pas de manière convexe
+
+    ## Exemple à la main
+
+// ===================== NEXT ==================================================
+
+# Prochains Cours ?
+show info
+  Etude d'un module, d'une topologie de réseau de neurones particulère
+
+# The END
