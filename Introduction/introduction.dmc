@@ -1,12 +1,14 @@
 open introduction.dmc
 
+show youtube XTNl5WxklgE
+
 // ===================== MASTER CLASS IA =======================================
 
 # Master Class IA
 
   ## Pour qui ?
 
-  show info Toute personne intéressée par le sujet
+  show image https://i1.wp.com/gifrific.com/wp-content/uploads/2012/08/Gary-Oldman-Yelling-Everyone-Leon-The-Professional.gif
   show info
     Pas de prérequis préalable mais mieux si:
       - Bases d'Algèbre Linéaire
@@ -14,8 +16,8 @@ open introduction.dmc
       - Bases d'Algorithmie
 
 
-  ## Pourquoi ?
-
+  // Pourquoi ?
+  show image https://i.imgur.com/6Xq9ST9.gif
   show info
     Invention majeure en informatique
     Secteur à fort potentiel d'investissement
@@ -31,15 +33,22 @@ open introduction.dmc
   show info
     Réseaux de Neurones Convolutifs
     Yolo & Transfert de Style
+  show image https://cdn-images-1.medium.com/max/1600/0*AXgNnry6uUMVmY8N.
+  show image https://cdn-images-1.medium.com/max/1600/1*XI3beonBnOwp-y5BwNOqCw.gif
   show info
     Réseaux de Neurones Récurrents
     Embedding & Traduction
+  show image https://cdn-images-1.medium.com/max/1600/1*_80rvfEBcGWDxNJE0rFJHA.gif
   show info
     Apprentissage par Réenforcement
     Deep Q Network & Améliorations
+  show image https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2016/deepmindrese.gif
   show info
     Modèles génératifs
     Pokemon & Super Résolution
+  show image https://camo.githubusercontent.com/15ad5010011227a7ab8c6c77d19b7cc625cced30/687474703a2f2f6572696b6c696e6465726e6f72656e2e73652f696d616765732f67616e5f6d6e697374352e676966
+  show image http://vllab.ucmerced.edu/wlai24/LapSRN/images/emma_text.gif
+  show info Coder un Framework de Deep Learning
 
 // ===================== IA ====================================================
 
@@ -48,6 +57,7 @@ open introduction.dmc
   ## Définitions
 
   show info Il n'y a pas qu'une seule définition
+  show image https://i.giphy.com/media/LAkqpRcBrh1wQ/source.gif
   show info
     L'Intelligence Artificielle est la science dont le but est de faire faire par
     une machine des tâches que l'homme accomplit en utilisant son intelligence
@@ -58,6 +68,7 @@ open introduction.dmc
 
 
   ## IA Faible vs IA Forte
+  show image http://78.media.tumblr.com/a87b010992a79bd5794790dcff2a6c2e/tumblr_miq9zd2uxn1qaa8d1o1_500.gif
 
     ### Faible
     show info Non-sensible, qui se concentre sur une tâche précise et prédéfinie
@@ -71,6 +82,7 @@ open introduction.dmc
 // ===================== MATHS FOR DEEP LEARNING ===============================
 
 # Mathématiques pour le Deep Learning
+show image https://i.giphy.com/media/DHqth0hVQoIzS/source.gif
 
   ## Algèbre Linéaire
 
@@ -123,7 +135,7 @@ open introduction.dmc
         Un Vecteur a 1 indice
       show maths V=M_{3,1}=\begin{bmatrix}a_{1}\\a_{2}\\a_{3}\end{bmatrix}
       show maths M_{3,2}=\begin{bmatrix}a_{1,1}&a_{1,2}\\a_{2,1}&a_{2,2}\\a_{3,1}&a_{3,2}\end{bmatrix}
-
+      show image https://media.giphy.com/media/OkSnYhwUoEdW0/giphy.gif
 
   ## Analyse de Fonctions
 
@@ -132,11 +144,13 @@ open introduction.dmc
       #### Une Variable
       show maths f(x) = x^{2}
 
+
       #### Plusieurs Variables
       show maths f(x, y) = (x - y)^{2}
 
 
     ### Dérivation
+    show image https://www.wikihow.com/images/c/cc/Tangent_animation.gif
 
       #### Une Variable
       show maths f'(x) = 2x
@@ -231,15 +245,18 @@ open introduction.dmc
 // ===================== DEEP LEARNING =========================================
 
 # Introduction au Deep Learning
+show image https://lh3.googleusercontent.com/-isKmJGoBxAc/VkNkfUKq67I/AAAAAAAAA8k/y3j1mdJZA3M/w530-h278-n/DeepLearning%2B%25281%2529.gif
 
 show info
   Le Deep Learning est l'apprentissage de Représentations
   Extracteur de caractéristique entraînable
 
 
+
     ## Machine Learning
 
       ### Régression Linéaire
+      show image https://www.wikitechy.com/tutorials/r-programming/img/r-programming-images/linear-regression.gif
       show maths y = W^{t}X
       show maths L(W, y_{i}, X_{i}) = \frac{1}{2} (y_{i}-W^{t}X_{i})^{2}
       show maths \frac{\partial L}{\partial W} = -(yi - W^{t}(t) X_{i}) X_{i}
@@ -252,6 +269,7 @@ show info
         Méthode imbattable en optimisation et seulement 3 lignes de code
 
       ### Perceptron
+      show image https://sandipanweb.files.wordpress.com/2016/07/b2.gif?w=676
       show maths y = F(W^{t}X) \:\:\:\:\:\:\:\:\:\:\:\:\ F\,fonction\,seuil
       show maths L(W, y_{i}, X_{i}) = (F(W^{t}X_{i}) - y_{i}) W^{t} X_{i}
       show maths \frac{\partial L}{\partial W} = -(yi - F(W^{t}(t) X_{i})) X_{i}
@@ -259,6 +277,7 @@ show info
       show info Régression Linéaire est un perceptron avec F = Id
 
       ### Régression Logistique
+      show image https://www.qualitydigest.com/IQedit/Images/Articles_and_Columns/Sept_2011/Babe_2.gif
       show maths y = F(W^{t}X) \:\:\:\:\:\:\:\:\:\:\:\:\ F\,sigmoid
       show maths L(W, y_{i}, X_{i}) = 2log(1 + exp(y_{i}W^{t}X_{i}))
       show maths \frac{\partial L}{\partial W} = -(yi - F(W^{t}(t) X_{i})) X_{i}
@@ -280,6 +299,7 @@ show info
 
       ### Ruse
       show info Augmenter la dimension par une transformation non linéaire
+      show image https://archive.cnx.org/resources/7ee23dc27ce9678d07a8e144e55e3a54debda548/example1.png
       show info Exemple: Prendre le produit des entrées
       show maths
         (1, x_{1}, x_{2}): \, (1, x_{1}, x_{2}, x_{1}^{2}, x_{2}^{2}, x_{1}x_{2})
@@ -288,7 +308,7 @@ show info
         Ne fonctionne pas à grande dimension, elle explose rapidement
 
       ### Autres Ruses
-      show info Trop coûteux en terme de dimensionnalité
+      show image https://i.giphy.com/media/12DNooI6je8AUw/giphy.webp
 
       ### Machines à Noyaux
       show info Machine à Vecteur de Support
@@ -298,7 +318,8 @@ show info
         Souvent un K est spécifique à un problème
         La méthode n'est donc pas généralisable
 
-      ### Idées à retenir
+      // Remember
+      show image https://i.gifer.com/FDkk.gif
       show info
         Les SVM sont performantes car le Noyau est surparamétrisé
         Cela rend le modèle assez flexible pour permettre l'apprentissage
@@ -315,6 +336,7 @@ show info
     show info
       Combinaison de décisions élémentaires
       Les K sont appris par le modèle
+    show image http://www.geocomputation.org/1998/05/gc05_01.gif
 
       ### Aciennes Méthodes
       show info
@@ -330,8 +352,10 @@ show info
         C'est un Ensemble de concept divisés eux même en concepts plus simples
       show quote from Albert Einstein
         Ce qui est incompréhensible, c’est que le monde soit compréhensible.
+      show image https://cdn-images-1.medium.com/max/1600/1*I75ghqLA1CbKeyqz3j-yGA.jpeg
 
-      ### Challenges
+      // Challenges
+      show image http://78.media.tumblr.com/aebeb686a640493b512c8999881d1fb5/tumblr_njzrzaICmG1s3h43ko1_500.gif
       show info Apprendre des représentations du monde à plusieurs niveaux
       show info
         Exemple: Traitement visuel et audio chez les mamifères
@@ -346,8 +370,7 @@ show info
         Bi-Directionnel: Deep Boltzman Machines, Stacked Auto Encoder
 
       ### Différents Entraînement
-        #### Supervisé
-        #### Non Supervisé
+      show image https://www.mathworks.com/help/stats/machinelearning_supervisedunsupervised.png
 
       ### Réticences
       show info On peut approximer n'importe quelle fonction avec deux couches
@@ -366,12 +389,15 @@ show info
         L'apprentissage intéressant n'est pas convexe
         L'Humain n'apprend pas de manière convexe
 
-    ## Exemple à la main
+    // Exemple à la main
+    show image https://i.giphy.com/media/xT9KVqOt8xuRYhNpq8/200.gif
 
 // ===================== NEXT ==================================================
 
-# Prochains Cours ?
+// Prochains Cours ?
+show image https://media2.giphy.com/media/3og0ICZh82LEsNjHoc/source.gif
 show info
   Etude d'un module, d'une topologie de réseau de neurones particulère
 
-# The END
+// The END
+show info https://i.giphy.com/media/wJA6wsAigcvle/giphy.webp
