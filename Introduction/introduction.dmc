@@ -74,8 +74,77 @@ open introduction.dmc
 
   ## Algèbre Linéaire
 
+    ### Matrices
+      #### Définition
+      show info Une Matrice est un tableau de dimension n par m
+      show info Avec n = 3 et m = 2 on la Matrice M suivante:
+      show maths M_{3,2}=\begin{bmatrix}a_{1,1}&a_{1,2}\\a_{2,1}&a_{2,2}\\a_{3,1}&a_{3,2}\end{bmatrix}
+
+      #### Opérations
+      show maths A=\begin{bmatrix}a_{1,1}&a_{1,2}\\a_{2,1}&a_{2,2}\\a_{3,1}&a_{3,2}\end{bmatrix}
+      show maths B=\begin{bmatrix}b_{1,1}&b_{1,2}\\b_{2,1}&b_{2,2}\\b_{3,1}&b_{3,2}\end{bmatrix}
+
+        ##### Addition
+        show maths
+          A+B=\begin{bmatrix}
+            a_{1,1} + b_{1,1} & a_{1,2} + b_{1,2}\\
+            a_{2,1} + b_{2,1} & a_{2,2} + b_{2,2}\\
+            a_{3,1} + b_{3,1} & a_{3,2} + b_{3,2}
+          \end{bmatrix}
+
+        ##### Produit de Hadamard
+        show maths
+          A \circ B=\begin{bmatrix}
+            a_{1,1} \times b_{1,1} & a_{1,2} \times b_{1,2}\\
+            a_{2,1} \times b_{2,1} & a_{2,2} \times b_{2,2}\\
+            a_{3,1} \times b_{3,1} & a_{3,2} \times b_{3,2}
+          \end{bmatrix}
+
+        ##### Multiplication Matricielle
+        show maths A=\begin{bmatrix}a_{1,1}&a_{1,2}\\a_{2,1}&a_{2,2}\\a_{3,1}&a_{3,2}\end{bmatrix}
+        show maths B=\begin{bmatrix}b_{1,1}&b_{1,2}\\b_{2,1}&b_{2,2}\\\end{bmatrix}
+        show maths
+          A.B=AB=\begin{bmatrix}
+            a_{1,1}b_{1,1} + a_{1,2}b_{2,1} && a_{1,1}b_{1,2} + a_{1,2}b_{2,2}\\
+            a_{2,1}b_{1,1} + a_{2,2}b_{2,1} && a_{2,1}b_{1,2} + a_{1,2}b_{2,2}
+          \end{bmatrix}
+
+        ##### Transposée
+        show maths
+          T(A)=A^{t}=\begin{bmatrix}
+            a_{1,1} & a_{2,1} & a_{3,1}\\
+            a_{1,2} & a_{2,2} & a_{3,2}
+          \end{bmatrix}
+
+    ### Généralisation
+      show info
+        Un Tenseur est une généralisation à n indices du concept de Matrice
+        Une Matrice a 2 indices: 1 pour la ligne et 1 pour la colonne
+        Un Vecteur a 1 indice
+      show maths V=M_{3,1}=\begin{bmatrix}a_{1}\\a_{2}\\a_{3}\end{bmatrix}
+      show maths M_{3,2}=\begin{bmatrix}a_{1,1}&a_{1,2}\\a_{2,1}&a_{2,2}\\a_{3,1}&a_{3,2}\end{bmatrix}
+
 
   ## Analyse de Fonctions
+
+    ### Fonctions
+
+      #### Une Variable
+      show maths f(x) = x^{2}
+
+      #### Plusieurs Variables
+      show maths f(x, y) = (x - y)^{2}
+
+
+    ### Dérivation
+
+      #### Une Variable
+      show maths f'(x) = 2x
+      show maths (g \circ f)' = (g' \circ f) f'
+
+      #### Plusieurs Variables
+      show maths \frac{\partial f(x, y)}{\partial x} = 2x - 2y
+      show maths \frac{\partial f(x, y)}{\partial y} = 2y - 2x
 
 // ===================== PYTHON CHEAT SHEET ====================================
 
