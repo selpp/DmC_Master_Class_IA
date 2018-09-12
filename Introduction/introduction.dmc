@@ -395,9 +395,9 @@ show info
 // ===================== NEXT ==================================================
 
 // Prochains Cours ?
-show image https://media2.giphy.com/media/3og0ICZh82LEsNjHoc/source.gif
+show https://i.giphy.com/media/3og0ICZh82LEsNjHoc/source.gif
 show info
   Etude d'un module, d'une topologie de réseau de neurones particulère
 
 // The END
-show info https://i.giphy.com/media/wJA6wsAigcvle/giphy.webp
+show image https://i.giphy.com/media/wJA6wsAigcvle/giphy.webp
